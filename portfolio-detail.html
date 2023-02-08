@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFolio-PortFolio</title>
+    <!-- link -->
+    <link rel="stylesheet" href="./access/css.css/main.css">
+    <link rel="stylesheet" href="./access/css.css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!--====== Header ======-->
+    <header id="header" class="header fixed-top header-original">
+        <div class="container d-flex justify-content-between">
+            <!--==== Logo ====-->
+            <h1 class="logo">
+                <a href="index.html" class="logo-link">DevFolio</a>
+            </h1>
+            <!--==== End Logo ====-->
+
+            <!--==== Navbar ====-->
+            <nav id="navbar" class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">sevices</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">work</a></li>
+                    <li class="dropdown">
+                        <a href="#">Drop Down<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown-ex">
+                                <a href="#">Deep Drop down<i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="sub-menu-ex">
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                
+            </nav>
+            <!--==== End Navbar ====-->
+        </div>
+        <i id="icon-toggle" class="fas fa-bars moblie-menu-toggle" onclick="myFunction()"></i>
+    </header>
+    <!--====== End Header ======-->
+    <!--====== Hero ======-->
+    <div class="hero-single bg-img">
+        <div class="counter-overlay"></div>
+        <div class="hero-content d-table">
+            <div class="table-cell">
+                <div class="container">
+                    <h2 class="hero-title mb-4">PortFolio Details</h2>
+                    <ul class="breadcrumb d-flex justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a href="">PortFolio Details</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== End Hero ======-->
+
+    <!--====== Main ======-->
+    <main id="main">
+        <!--====== PortFolio Details ======-->
+        <section class="portfolio-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="./access/img/portfolio-details-1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="./access/img/portfolio-details-2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="author-box">
+                                    <div class="author-img">
+                                        <img src="./access/img/portfolio-details-2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="text-center">
+                            <span class="dot" onclick="currentSlide(0)"></span>
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-project">
+                            <h3 class="portfolio-project-tittle">Project Information</h3>
+                            <ul>
+                                <li>
+                                    <strong>Category :</strong> <span>Web Design</span>
+                                </li>
+                                <li>
+                                    <strong>Client :</strong> <span>NASA</span>
+                                </li>
+                                <li>
+                                    <strong>Project Date :</strong> <span>30 Feb 2020</span>
+                                </li>
+                                <li>
+                                    <strong>Project URL :</strong> <span>www.example.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description">
+                            <h3>This is an example of portfolio detail</h3>
+                            <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi
+                                labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque
+                                itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur
+                                dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== End PortFolio Details ======-->
+
+    </main>
+    <!--====== End Main ======-->
+    <!--====== Footer ======-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box text-center">
+                        <p class="copyright">&#169; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+                        <p class="design">Designed by BoostrapMade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== End Footer ======-->
+    <!--====== Back to top ======-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="align-items-center justify-content-center"><i
+            class="fas fa-arrow-up"></i></button>
+    <!--====== End Back to top ======-->
+
+
+
+
+     <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/be875830b2.js" crossorigin="anonymous"></script>
+
+     <script src="./access/js.js/main.js"></script>
+     <script src="./access/js.js/slide.js"></script>
+ 
+     
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+         crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+         crossorigin="anonymous"></script>
+     
+</body>
+
+</html>

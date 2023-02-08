@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5 !important;
+    color: #4e4e4e !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+}
+:root{
+    --white-color: #fff;
+    --background-main-color: #ffa400;
+    --color-text: #4e4e4e;
+    --base-color: #0078ff;
+}
